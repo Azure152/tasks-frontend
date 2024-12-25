@@ -1,0 +1,132 @@
+@import './base.css';
+
+#app {
+  /* max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal; */
+  width: 100vw;
+  height: 100vh;
+  min-height: 100vh;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+
+.container {
+  max-width: 600px;
+  margin-inline: auto;
+  box-shadow: 0px 2px 4px 0px #0005;
+  border-radius: 5px;
+  padding: 2em;
+}
+
+.input {
+  width: 100%;
+  border-radius: 5px;
+  min-height: 2.5rem;
+  border: 1px solid #ccc;
+  padding: 0.7em;
+}
+
+.button {
+  padding: 0.6em 1.7em;
+  background-color: #444;
+  color: #fff;
+  border: unset;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #111;
+}
+
+.button[disabled] {
+  background-color: #aaa;
+  cursor: progress;
+}
+
+.input, .button {
+  font: inherit;
+}
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tasks-items-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, calc(50% - 0.5em));
+  gap: 1em;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: -webkit-fill-available;
+  gap: 1em;
+  padding: 1em 2em;
+}
+
+.task-item-text {
+  flex: 1 1 auto;
+}
+
+.task-item-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+.button-danger {
+  background-color: #e44;
+}
+
+.button-danger:not([disabled]):hover {
+  background-color: #f44;
+}
+
+.title {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.input-errors {
+  font-size: 0.8rem;
+  color: #e44;
+  margin-top: 0.4rem;
+  list-style-position: inside;
+  padding-left: unset;
+  list-style: none;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  /* body {
+    display: flex;
+    place-items: center;
+  } */
+
+  /* #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  } */
+}
